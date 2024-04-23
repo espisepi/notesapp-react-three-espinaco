@@ -1,0 +1,15 @@
+========= FRONTEND TODOS ===================
+
+- Funcionalidad CRUD notas
+- Funcionalidad Mostrar nota en espacio 3d (r3f)
+- Funcionalidad Mostrar notas de una libreta en espacio 3d (r3f)
+- Funcionalidad Registrarse/loguearse usuarios
+
+========= FIN FRONTEND TODOS ===================
+
+========= BACKEND TODOS ===================
+
+- Funcionalidad CRUD notas
+- Funcionalidad Registrarse/loguearse usuarios
+
+========= FIN BACKEND TODOS ===================
