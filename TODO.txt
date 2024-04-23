@@ -1,6 +1,6 @@
 ========= FRONTEND TODOS ===================
 
-- Funcionalidad CRUD notas (redux)
+- Funcionalidad CRUD notas (redux, arquitectura hexagonal https://github.com/espisepi/hexagonal-architecture-frontend.git)
 - Funcionalidad Mostrar nota en espacio 3d (r3f)
 - Funcionalidad Mostrar notas de una libreta en espacio 3d (r3f)
 - Funcionalidad Registrarse/loguearse usuarios
