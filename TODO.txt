@@ -3,7 +3,7 @@
 - Funcionalidad CRUD notas 
   -- redux
   -- arquitectura hexagonal https://github.com/espisepi/hexagonal-architecture-frontend.git
-  -- arquitectura MERN Calendar de Fernando Herrera
+  -- arquitectura MERN Calendar de Fernando Herrera (para la app frontend react, ya que la arquitectura hexagonal no dice nada de la arquitectura de la app frontend)
   -- Mezclar las dos arquitecturas anteriores y poner de mi cosecha si creo necesario
 - Funcionalidad Mostrar nota en espacio 3d (r3f)
 - Funcionalidad Mostrar notas de una libreta en espacio 3d (r3f)
