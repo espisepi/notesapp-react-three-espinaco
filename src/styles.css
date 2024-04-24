@@ -3,5 +3,6 @@ body,
 #root {
   height: 100%;
   margin: 0;
-  background: #000000;
+  /* background: #000000; */
+  background: #f0f0f0;
 }
