@@ -1,14 +1,25 @@
-import { Canvas } from '@react-three/fiber'
-import { OrbitControls, Environment, ContactShadows } from '@react-three/drei'
-import { Model } from './Shoe'
+import React from "react";
+import Header from "./framework/presentation/components/Header";
+import Container from "./framework/presentation/components/Container";
+import AddForm from "./framework/presentation/components/AddForm";
+import BookContainer from "./framework/presentation/components/book/BookContainer";
 
-export default function App() {
+import { Provider } from "react-redux";
+import { store } from "./framework/presentation/store/store";
+
+
+const App = () => {
   return (
-    <Canvas shadows camera={{ position: [0, 0, 1.66] }}>
-      <Environment files="./img/forest_slope_1k.hdr" />
-      <Model />
-      <ContactShadows position={[0, -0.8, 0]} color="#ffffff" />
-      <OrbitControls autoRotate />
-    </Canvas>
-  )
-}
+    <>
+      <Provider store={store}>
+        <Header />
+        <Container>
+          <AddForm />
+          <BookContainer />
+        </Container>
+      </Provider>
+    </>
+  );
+};
+
+export default App;

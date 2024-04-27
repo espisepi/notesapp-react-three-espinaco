@@ -2,6 +2,7 @@
 
 - Funcionalidad CRUD notas 
   -- redux
+  https://github.com/Abouelyatim/React-App-Clean-Architecture
   -- arquitectura hexagonal https://github.com/espisepi/hexagonal-architecture-frontend.git
   -- arquitectura MERN Calendar de Fernando Herrera (para la app frontend react, ya que la arquitectura hexagonal no dice nada de la arquitectura de la app frontend)
   -- Mezclar las dos arquitecturas anteriores y poner de mi cosecha si creo necesario
@@ -17,3 +18,5 @@
 - Funcionalidad Registrarse/loguearse usuarios
 
 ========= FIN BACKEND TODOS ===================
+
+https://github.com/Abouelyatim/React-App-Clean-Architecture
