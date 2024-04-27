@@ -1,6 +1,6 @@
 import MainNetworkDataSource from "../datasource/network/MainNetworkDataSource";
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { handleUseCaseError } from "./HandleUseCaseException";
+import { handleUseCaseError } from "../../../../common/business/interactors/HandleUseCaseException";
 import Book from "../domain/Book";
 import { RootState } from "../../framework/presentation/store/store";
 import { insertLog } from "../../framework/presentation/viewmodel/slices/ReportSlice";

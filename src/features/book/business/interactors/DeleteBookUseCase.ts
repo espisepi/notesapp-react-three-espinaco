@@ -1,7 +1,7 @@
 import MainNetworkDataSource from "../datasource/network/MainNetworkDataSource";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import Book from "../domain/Book";
-import { handleUseCaseError } from "./HandleUseCaseException";
+import { handleUseCaseError } from "../../../../common/business/interactors/HandleUseCaseException";
 
 export default class DeleteBookUseCase {
   constructor(private readonly mainNetworkDataSource: MainNetworkDataSource) {}
