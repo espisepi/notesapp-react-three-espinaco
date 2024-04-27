@@ -2,7 +2,7 @@ import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Environment, ContactShadows } from '@react-three/drei'
 import { Model } from './Shoe'
 
-export default function App() {
+export default function AppThree() {
   return (
     <Canvas shadows camera={{ position: [0, 0, 1.66] }}>
       <Environment files="./img/forest_slope_1k.hdr" />
