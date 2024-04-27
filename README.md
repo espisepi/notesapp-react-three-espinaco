@@ -1,3 +1,5 @@
+Architecture thanks to: https://github.com/Abouelyatim/React-App-Clean-Architecture
+
 # Sample code of React + Redux-toolkit + typescript with Clean architecture
 This project is a sample code to introduce a Clean Architecture to a web service or to use a Redux Architecture and a Clean Architecture together.
 
