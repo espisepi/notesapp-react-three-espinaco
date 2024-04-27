@@ -1,3 +1,30 @@
+
+## Run Project
+### 1. Mock Server
+#### Install
+```shell
+# $ cd /server
+$ npm install
+```
+#### Start
+```shell
+# $ cd /server
+$ npm start
+```
+
+### 2. Web
+#### Install
+```shell
+# root project directory
+$ npm install
+```
+
+#### Start
+```shell
+# root project directory
+$ npm start
+```
+
 # React-Three-Fiber-Boilerplate
 
 - Esta app de notas va a ser una mezcla de:
