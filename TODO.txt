@@ -1,5 +1,7 @@
 
-- TODO: extraer features/auth y features/report de features/book
+- OK: extraer features/auth y features/report de features/book
+
+- TODO: Poner styled components
 
 
 
