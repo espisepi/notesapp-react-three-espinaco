@@ -10,3 +10,5 @@ const AppNote = () => {
 };
 
 export default AppNote;
+
+// TODO: Continuar con el backend de note y despues todo el manejo de datos frontend

@@ -1,4 +1,10 @@
 {
+  "notes": [
+    {
+      "id": 1,
+      "content": "<h1>nota 1</h1>"
+    }
+  ],
   "books": [
     {
       "title": "vf",
