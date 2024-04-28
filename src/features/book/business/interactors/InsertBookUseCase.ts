@@ -3,7 +3,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import { handleUseCaseError } from "../../../../common/business/interactors/HandleUseCaseException";
 import Book from "../domain/Book";
 import { RootState } from "../../../../common/framework/presentation/store/store";
-import { insertLog } from "../../framework/presentation/viewmodel/slices/ReportSlice";
+import { insertLog } from "../../../report/framework/presentation/viewmodel/slices/ReportSlice";
 
 export default class InsertBookUseCase {
   constructor(private readonly mainNetworkDataSource: MainNetworkDataSource) {}
