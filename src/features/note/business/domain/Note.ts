@@ -1,7 +1,5 @@
 export default interface Note {
   id?: number;
-  title: string;
-  description: string;
-  price: number;
+  content: string;
   userName?: string;
 }

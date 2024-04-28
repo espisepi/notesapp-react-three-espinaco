@@ -20,7 +20,7 @@ const NotesList = () => {
             className="list-group-item d-flex  justify-content-between align-items-center"
             key={note.id}
           >
-            <div>{note.title}</div>
+            <div>{note.content}</div>
             <div className="btn-group" role="group">
               <button
                 type="button"

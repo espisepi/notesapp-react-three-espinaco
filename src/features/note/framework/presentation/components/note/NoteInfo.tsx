@@ -8,9 +8,9 @@ const NoteInfo = () => {
       <h2>Note Details</h2>
       {readingNote ? (
         <div>
-          <p className="fw-bold">Title: {readingNote.title}</p>
-          <p className="fst-italic">Price: {readingNote.price}</p>
-          <p className="fw-light">Description: {readingNote.description}</p>
+          <p className="fw-bold">Content: {readingNote.content}</p>
+          <p className="fst-italic">id: {readingNote.id}</p>
+          <p className="fw-light">username: {readingNote.userName}</p>
         </div>
       ) : (
         <div className="alert alert-secondary" role="alert">

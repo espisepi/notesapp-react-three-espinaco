@@ -1,25 +1,14 @@
 {
   "notes": [
     {
-      "title": "d",
-      "price": 23,
-      "description": "e",
+      "content": "note 1",
       "userName": "ibrahim",
       "id": 1
     },
     {
-      "title": "ee",
-      "price": 23,
-      "description": "ed",
+      "content": "note 2",
       "userName": "ibrahim",
       "id": 2
-    },
-    {
-      "title": "puta",
-      "price": 23,
-      "description": "s",
-      "userName": "ibrahim",
-      "id": 3
     }
   ],
   "books": [

@@ -6,27 +6,19 @@ const AddForm = () => {
   const { isLoggedIn } = useAppSelector((state) => state.AuthSlice);
   const dispatch = useAppDispatch();
 
-  const titleRef = useRef<HTMLInputElement>(null);
-  const priceRef = useRef<HTMLInputElement>(null);
-  const descRef = useRef<HTMLTextAreaElement>(null);
+  const contentNoteRef = useRef<HTMLInputElement>(null);
 
   const formSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (
-      titleRef.current?.checkValidity() &&
-      priceRef.current?.checkValidity() &&
-      descRef.current?.checkValidity()
+      contentNoteRef.current?.checkValidity()
     ) {
       dispatch(
         InsertNoteEvents().insertNoteEvent({
-          title: titleRef.current.value,
-          price: +priceRef.current.value,
-          description: descRef.current.value,
+          content: contentNoteRef.current.value,
         })
       );
-      titleRef.current.value = "";
-      priceRef.current.value = "";
-      descRef.current.value = "";
+      contentNoteRef.current.value = "";
     }
   };
 
@@ -35,35 +27,15 @@ const AddForm = () => {
       <div className="col-6 offset-3 mt-3">
         <h2>Insert Note</h2>
         <form onSubmit={formSubmit}>
-          <div className="form-group">
-            <label htmlFor="title">Title</label>
+        <div className="form-group">
+          <label htmlFor="content">Content</label>
             <input
               type="text"
               className="form-control"
-              ref={titleRef}
-              id="title"
+              ref={contentNoteRef}
+              id="content"
               required
             />
-          </div>
-          <div className="form-group">
-            <label htmlFor="price">Price</label>
-            <input
-              type="number"
-              className="form-control"
-              ref={priceRef}
-              id="price"
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="Description">Description</label>
-            <textarea
-              className="form-control"
-              id="description"
-              rows={3}
-              required
-              ref={descRef}
-            ></textarea>
           </div>
           <button
             type="submit"

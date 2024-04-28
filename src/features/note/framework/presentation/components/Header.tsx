@@ -7,9 +7,9 @@ const Header = () => {
   const { isLoggedIn } = useAppSelector((state) => state.AuthSlice);
   const { error } = useAppSelector((state) => state.NoteSlice);
 
-  const handleLogInOut = () => {
-    // dispatch(logInOutEvent());
-  };
+  // const handleLogInOut = () => {
+  //   dispatch(logInOutEvent());
+  // };
 
   return (
     <>
@@ -22,13 +22,13 @@ const Header = () => {
       <nav className="navbar navbar-dark bg-dark">
         <span className="navbar-brand mb-0 h1">My Notes</span>
 
-        <button
+        {/* <button
           className="btn btn-outline-primary"
           type="submit"
           onClick={handleLogInOut}
         >
           {isLoggedIn ? "log Out" : "log In"}
-        </button>
+        </button> */}
       </nav>
     </>
   );
