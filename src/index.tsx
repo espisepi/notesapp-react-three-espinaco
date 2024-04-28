@@ -9,7 +9,7 @@ import AppNote from './features/note/AppNote'
 
 // redux
 import { Provider } from "react-redux";
-import { store } from './features/book/framework/presentation/store/store';
+import { store } from './common/framework/presentation/store/store';
 
 createRoot(document.getElementById('root') as HTMLDivElement).render(
   <StrictMode>

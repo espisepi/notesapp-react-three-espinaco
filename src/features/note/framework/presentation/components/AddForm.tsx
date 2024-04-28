@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useAppDispatch, useAppSelector } from "../../../../../common/framework/presentation/store/hooks";
-import { InsertBookEvents } from "../viewmodel/events/InsertBookEvents";
+import { InsertNoteEvents } from "../viewmodel/events/InsertNoteEvents";
 
 const AddForm = () => {
   const { isLoggedIn } = useAppSelector((state) => state.AuthSlice);
@@ -18,7 +18,7 @@ const AddForm = () => {
       descRef.current?.checkValidity()
     ) {
       dispatch(
-        InsertBookEvents().insertBookEvent({
+        InsertNoteEvents().insertNoteEvent({
           title: titleRef.current.value,
           price: +priceRef.current.value,
           description: descRef.current.value,
@@ -33,7 +33,7 @@ const AddForm = () => {
   return (
     <div className="row">
       <div className="col-6 offset-3 mt-3">
-        <h2>Insert Book</h2>
+        <h2>Insert Note</h2>
         <form onSubmit={formSubmit}>
           <div className="form-group">
             <label htmlFor="title">Title</label>

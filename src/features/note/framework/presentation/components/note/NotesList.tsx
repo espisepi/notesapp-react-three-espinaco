@@ -1,33 +1,33 @@
 import React, { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../../../../../../common/framework/presentation/store/hooks";
-import { GetBooksEvents } from "../../viewmodel/events/GetBooksEvents";
-import { DeleteBookEvents } from "../../viewmodel/events/DeleteBookEvents";
-import { readBookEvent } from "../../viewmodel/slices/BookSlice";
+import { GetNotesEvents } from "../../viewmodel/events/GetNotesEvents";
+import { DeleteNoteEvents } from "../../viewmodel/events/DeleteNoteEvents";
+import { readNoteEvent } from "../../viewmodel/slices/NoteSlice";
 
-const BooksList = () => {
+const NotesList = () => {
   const { isLoggedIn } = useAppSelector((state) => state.AuthSlice);
-  const { isLoading, books } = useAppSelector((state) => state.BookSlice);
+  const { isLoading, notes } = useAppSelector((state) => state.NoteSlice);
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    dispatch(GetBooksEvents().getBooksEvent());
+    dispatch(GetNotesEvents().getNotesEvent());
   }, [dispatch]);
 
-  const bookList =
-    books.length > 0
-      ? books.map((book) => (
+  const noteList =
+    notes.length > 0
+      ? notes.map((note) => (
           <li
             className="list-group-item d-flex  justify-content-between align-items-center"
-            key={book.id}
+            key={note.id}
           >
-            <div>{book.title}</div>
+            <div>{note.title}</div>
             <div className="btn-group" role="group">
               <button
                 type="button"
                 className="btn btn-primary"
                 disabled={!isLoggedIn}
                 onClick={() => {
-                  dispatch(readBookEvent(book));
+                  dispatch(readNoteEvent(note));
                 }}
               >
                 Read
@@ -37,7 +37,7 @@ const BooksList = () => {
                 className="btn btn-danger"
                 disabled={!isLoggedIn}
                 onClick={
-                  () => dispatch(DeleteBookEvents().deleteBookEvent(book))
+                  () => dispatch(DeleteNoteEvents().deleteNoteEvent(note))
                   //get use case response
                   /*.unwrap()
                     .then((data) => {
@@ -53,14 +53,14 @@ const BooksList = () => {
             </div>
           </li>
         ))
-      : "no books found";
+      : "no notes found";
 
   return (
     <div>
-      <h2>Books List</h2>
-      {isLoading ? "loading..." : <ul className="list-group">{bookList}</ul>}
+      <h2>Notes List</h2>
+      {isLoading ? "loading..." : <ul className="list-group">{noteList}</ul>}
     </div>
   );
 };
 
-export default BooksList;
+export default NotesList;

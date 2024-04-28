@@ -1,14 +1,14 @@
 import React from "react";
 import { useAppDispatch, useAppSelector } from "../../../../../common/framework/presentation/store/hooks";
-import { logInOutEvent } from "../viewmodel/slices/AuthSlice";
+// import { logInOutEvent } from "../viewmodel/slices/AuthSlice";
 
 const Header = () => {
   const dispatch = useAppDispatch();
   const { isLoggedIn } = useAppSelector((state) => state.AuthSlice);
-  const { error } = useAppSelector((state) => state.BookSlice);
+  const { error } = useAppSelector((state) => state.NoteSlice);
 
   const handleLogInOut = () => {
-    dispatch(logInOutEvent());
+    // dispatch(logInOutEvent());
   };
 
   return (
@@ -20,7 +20,7 @@ const Header = () => {
       )}
 
       <nav className="navbar navbar-dark bg-dark">
-        <span className="navbar-brand mb-0 h1">My Books</span>
+        <span className="navbar-brand mb-0 h1">My Notes</span>
 
         <button
           className="btn btn-outline-primary"

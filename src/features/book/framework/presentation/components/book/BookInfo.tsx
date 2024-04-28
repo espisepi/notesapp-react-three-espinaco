@@ -1,5 +1,5 @@
 import React from "react";
-import { useAppSelector } from "../../store/hooks";
+import { useAppSelector } from "../../../../../../common/framework/presentation/store/hooks";
 
 const BookInfo = () => {
   const { readingBook } = useAppSelector((state) => state.BookSlice);

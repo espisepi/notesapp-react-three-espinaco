@@ -3,7 +3,7 @@ import { OrbitControls, Environment, ContactShadows } from '@react-three/drei'
 import { Model } from './Shoe'
 
 // redux
-import { useAppSelector } from './features/book/framework/presentation/store/hooks';
+import { useAppSelector } from './common/framework/presentation/store/hooks';
 
 export default function AppThree() {
   // to work code below: <Provider store={store}><AppThree /></Provider>

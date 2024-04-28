@@ -1,3 +1,13 @@
+
+- TODO: extraer features/auth y features/report de features/book
+
+
+
+
+
+
+
+
 ========= FRONTEND TODOS ===================
 
 - Funcionalidad CRUD notas 
