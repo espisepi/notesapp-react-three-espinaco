@@ -3,7 +3,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import { handleUseCaseError } from "../../../../common/business/interactors/HandleUseCaseException";
 import Note from "../domain/Note";
 import { RootState } from "../../../../common/framework/presentation/store/store";
-// import { insertLog } from "../../framework/presentation/viewmodel/slices/ReportSlice";
+import { insertLog } from "../../../report/framework/presentation/viewmodel/slices/ReportSlice";
 
 export default class InsertNoteUseCase {
   constructor(private readonly mainNetworkDataSource: MainNetworkDataSource) {}
@@ -18,7 +18,7 @@ export default class InsertNoteUseCase {
         const returnedValue = await this.mainNetworkDataSource.insertNote(
           noteData
         );
-        // dispatch(insertLog("Insert note successes"));
+        dispatch(insertLog("Insert note successes"));
         return returnedValue;
       } catch (error: unknown) {
         return rejectWithValue(handleUseCaseError(error));
