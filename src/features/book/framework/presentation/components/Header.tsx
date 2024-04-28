@@ -1,6 +1,6 @@
 import React from "react";
 import { useAppDispatch, useAppSelector } from "../../../../../common/framework/presentation/store/hooks";
-import { logInOutEvent } from "../viewmodel/slices/AuthSlice";
+import { logInOutEvent } from "../../../../auth/framework/presentation/viewmodel/slices/AuthSlice";
 
 const Header = () => {
   const dispatch = useAppDispatch();

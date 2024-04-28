@@ -2,7 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 
 // book feature
 import BookSlice from "../../../../features/book/framework/presentation/viewmodel/slices/BookSlice";
-import AuthSlice from "../../../../features/book/framework/presentation/viewmodel/slices/AuthSlice";
+import AuthSlice from "../../../../features/auth/framework/presentation/viewmodel/slices/AuthSlice";
 import ReportSlice from "../../../../features/book/framework/presentation/viewmodel/slices/ReportSlice";
 
 // note feature
