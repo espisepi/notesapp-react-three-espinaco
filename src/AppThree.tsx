@@ -15,7 +15,7 @@ export default function AppThree() {
       <Environment files="./img/forest_slope_1k.hdr" />
       <Model />
       <ContactShadows position={[0, -0.8, 0]} color="#ffffff" />
-      <OrbitControls autoRotate />
+      <OrbitControls autoRotate enableZoom={false} />
     </Canvas>
   )
 }
