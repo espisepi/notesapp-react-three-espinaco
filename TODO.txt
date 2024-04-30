@@ -3,6 +3,11 @@
 
 - TODO: Poner styled components
 
+- TODO: Poner react-query con su arquitectura (mirar libro frontend architecture que tengo)
+
+- TODO: Usar react-form para los formularios
+
+- TODO: Poner escena threejs mostrando las notas (y despues seran las de un usuario en concreto y las de una libreta en concreto)
 
 
 
